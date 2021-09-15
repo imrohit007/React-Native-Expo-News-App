@@ -16,7 +16,7 @@ export default class HomeScreen extends Component {
     getArticles() {
         axios
           .get(
-            "https://newsapi.org/v2/everything?q=Cryptocurrency&from=2021-09-08&sortBy=popularity&apiKey=fed81dee2634494d9388a8a411b24bcd"
+            "https://newsapi.org/v2/everything?q=Cryptocurrency&from=2021-09-08&sortBy=popularity&apiKey=API_KEY"
           )
           .then(response =>
             response.data.articles.map(article => ({
